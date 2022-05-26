@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --beautiful-font: 'Alex Brush', cursive;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
