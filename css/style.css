@@ -18,6 +18,8 @@ html {
     --small-font: 1.4rem;
     --smaller-font: 1.3rem;
 
+    --font-weight: 400;
+
     --primary-color: #C87E4F;
     --secondary-color: #C2703D;
     --text-color: #333;
@@ -53,6 +55,7 @@ html {
 body, button, input {
     font-family: var(--body-font);
     font-size: var(--normal-font);
+    font-weight: var(--font-weight);
     color: var(--text-color);
 }
 body {
@@ -83,6 +86,12 @@ img {
     display: flex;
     align-items: center;
     column-gap: 0.6rem;
+}
+.button {
+    border: none;
+    outline: none;
+    padding: 1.4rem 4rem;
+    cursor: pointer;
 }
 .header {
     position: fixed;
@@ -199,23 +208,52 @@ img {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: var(--z-overlay);
 }
 .swiper-navBtn {
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 5rem;
-    width: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: var(--trans-0-3);
 }
 .swiper-navBtn:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
-.swiper-navBtn::after, .swiper-navBtn::before {
+.swiper-navBtn::after,
+.swiper-navBtn::before {
     font-size: 2rem;
     color: var(--white-color);
+}
+.swiper-button-next {
+    right: 16rem;
+}
+.swiper-button-prev {
+    left: 16rem;
 }
 .home__img {
     height: 100%;
     width: 100%;
+}
+.home__details {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: var(--z-fixed);
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    row-gap: 4rem;
+}
+.home__subtitle {
+    text-align: center;
+    font-size: var(--normal-font);
+    color: var(--white-color);
+}
+.home__title {
+    text-align: center;
+    font-size: var(--big-font);
+    color: var(--white-color);
 }
