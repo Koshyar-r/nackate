@@ -4,12 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#" />
+    <link rel="icon" href="">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>Nacka te & kaffe handel</title>
 </head>
 <body>
 
+    <header class="header">
+        <nav class="nav container flex">
+            <a href="#" class="logo__content flex">
+                <img src="logo.png" class="logo__img" alt="logo">
+                <span class="logo__text">Nacka Te & Kaffe</span>
+            </a>
+
+            <div class="menu__content">
+                <ul class="menu__list flex">
+                    <li><a href="#home" class="nav__link active__link">HEM</a></li>
+                    <li><a href="#about" class="nav__link">OM OSS</a></li>
+                    <li><a href="#products" class="nav__link">PRODUKTER</a></li>
+                    <li><a href="#contact" class="nav__link">KONTAKTA OSS</a></li>
+                </ul>
+
+                <i class="bx bx-x NavClose"></i>
+            </div>    
+                <div class="contact__content flex">
+                    <i class="bx bx-phone phone__icon"></i>
+                    <span class="phone__number">08-718 30 20</span>
+                </div>
+
+                <i class="bx bx-menu NavOpen"></i>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class=" home" id="home">
+            <div class="home__content">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="home__img" src="css/home-img-1.jpg" alt="img">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
