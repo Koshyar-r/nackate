@@ -30,3 +30,22 @@ if(NavMenu && NavCloseBtn) {
         body.style.overflowY = "scroll"
     })
 }
+
+const inputs = document.querySelectorAll(".input")
+
+function FocusFunction() {
+    let parent = this.parentNode
+    parent.classList.add("focus")
+}
+
+function BlurFunction() {
+    let parent = this.parentNode
+    if(this.value == "") {
+        parent.classList.remove("focus")
+    }
+}
+
+inputs.forEach(input => {
+    input.addEventListener("focus", FocusFunction)
+    input.addEventListener("blur", BlurFunction)
+})

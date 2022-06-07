@@ -53,7 +53,7 @@ html {
     padding: 0;
 }
 ::selection {
-    background-color: #4b0286;
+    background-color: #033e4d;
     color: var(--white-color);
 }
 html {
@@ -411,7 +411,7 @@ img {
 }
 .circle {
     border-radius: 50%;
-    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, transparent 20%, #1C0A00);
     position: absolute;
 }
 .circle.one {
@@ -425,4 +425,110 @@ img {
     height: 80px;
     top: 10px;
     right: 30px;
+}
+.contact__form:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: var(--primary-color);
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+}
+form {
+    padding: 2.3rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+.contact__title {
+    font-size: var(--h3-font);
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+.input__container {
+    position: relative;
+    margin: 1rem 0;
+}
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background: var(--secondary-color);
+    padding: 0.6rem 2rem;
+    color: var(--white-color);
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+}
+textarea.input {
+    padding: 0.8rem 2rem;
+    min-height: 150px;
+    border-radius: 20px;
+    resize: none;
+    overflow-y: auto;
+}
+.input__container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.input__container.textarea label {
+    top: 1rem;
+    transform: translateY(0);
+}
+.btn {
+    background-color: #034619;
+    padding: 1.6rem 1.8rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.btn:hover {
+    background-color: #032b10;
+}
+.input__container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+}
+.input__container span:before,
+.input__container span:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: var(--secondary-color);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input__container span:before {
+    left: 50%;
+}
+.input__container span:after {
+    right: 50%;
+}
+.input__container.focus label {
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+}
+.input__container.focus span:before,
+.input__container.focus span:after {
+    width: 50%;
+    opacity: 0;
 }
