@@ -49,3 +49,21 @@ inputs.forEach(input => {
     input.addEventListener("focus", FocusFunction)
     input.addEventListener("blur", BlurFunction)
 })
+
+
+ScrollToTop = document.getElementById("ScrollToTop")
+
+window.onscroll = function() {scrollFunction()}
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        ScrollToTop.style.display = "block"
+    } else {
+        ScrollToTop.style.display = "none"
+    }
+}
+
+function TopFunction() {
+    document.body.scrollTop = 0 // For Safari
+    document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+}
