@@ -40,10 +40,28 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.nav-item a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            document.querySelector('.nav-item a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
+let TopBtn = document.getElementById("TopBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    TopBtn.style.display = "block";
+  } else {
+    TopBtn.style.display = "none";
+  }
+}
+
+function TopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
