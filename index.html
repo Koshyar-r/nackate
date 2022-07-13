@@ -4,250 +4,225 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#">
-    <link rel="icon" href="">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Nacka te & kaffe handel</title>
 </head>
 <body>
+    <header class="header" id="header">
+        <nav class="nav container">
 
-    <header class="header">
-        <nav class="nav container flex">
-            <a href="#" class="logo__content flex">
-                <img src="logo.png" class="logo__img" alt="logo">
-                <span class="logo__text">Nacka Te & Kaffe</span>
-            </a>
+            <img src="assets/img/logo.png" alt="img" class="nav-logo">
 
-            <div class="menu__content">
-                <ul class="menu__list flex">
-                    <li><a href="#hem" class="nav__link active__link">Hem</a></li>
-                    <li><a href="#om-oss" class="nav__link">Om oss</a></li>
-                    <li><a href="#produkter" class="nav__link">Produkter</a></li>
-                    <li><a href="#kontakt" class="nav__link">Kontakt oss</a></li>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Om oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">Produkter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Kontakta oss</a>
+                    </li>
                 </ul>
 
-                <i class="bx bx-x NavClose"></i>
-            </div>    
-                <div class="contact__content flex">
-                    <i class="uil uil-phone phone__icon"></i>
-                    <span class="phone__number">08-718 30 20</span>
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
                 </div>
+            </div>
 
-                <i class="bx bx-menu NavOpen"></i>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="home" id="hem">
-            <div class="home__content">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="home__img" src="css/home-img-1.jpg" alt="img">
+    <main class="main">
+        
+        <section class="home" id="home">
+            <div class="home-container container grid">
+                <img src="assets/img/coffee.png" alt="img" class="home-img">
 
-                            <div class="home__details">
-                                <div class="home__text">
-                                    <h2 class="home__title">Välkommen till Nacka <br>te & kaffe handel!</h2>
-                                    <h4 class="home__subtitle">Hos oss hittar du ett mycket stort urval av te och kaffesorter av hög kvalite.<br> Vi finns på plan 3 i Nacka forum, välkommen in till oss!</h4>
-                                </div>
-                                <button class="button">utorska <i class="uil uil-coffee"></i></button> 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="home__img" src="css/home-img-2.jpg" alt="img">
+                <div class="home-data">
+                    <h1 class="home-title">Välkommen till Nacka te & kaffe handel</h1>
 
-                            <div class="home__details">
-                                <div class="home__text">
-                                    <h2 class="home__title">För er tedrickare...</h2>
-                                    <h4 class="home__subtitle">har vi över 200 tesorter. Besök gärna oss så hjälper<br> dig med att hitt din favoritte.</h4>                                  
-                                </div>
-                                <button class="button">utorska <i class="uil uil-coffee"></i></button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="home__img" src="css/home-img-3.jpg" alt="img">
-
-                            <div class="home__details">
-                                <div class="home__text">
-                                    <h2 class="home__title">Känner du till våra<br> ekologiska produkter?</h2>
-                                    <h4 class="home__subtitle">Kom gärna in och prova något<br> utav våra ekologiska te/kaffe!</h4>                 
-                                </div>
-                                <button class="button">utorska <i class="uil uil-coffee"></i></button> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-button-next swiper-navBtn"></div>
-                    <div class="swiper-button-prev swiper-navBtn"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section about" id="om-oss">
-
-            <h1 class="title about__section__title">Om oss...</h1>
-
-            <div class="about__content container">
-                <img src="css/butik.jpg" alt="" class="aboutimg__content">
-
-                <div class="about__details">
-                    <div class="about__text">
-                        <h4 class="content__subtitle">Nacka Te & Kaffe</h4>
-                        <h2 class="content__title">Butiken</h2>
-                        <p class="content__description">Nacka te & kaffe handel är Nackas första te och kaffebutik(handel) som öppnades sommaren 2002. Vi finns i Nacka forum, plan 3. Kom gärna förbi om du har några frågor eller funderingar kring te eller kaffe.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="second__about__content container">
-                <img src="css/personel.jpg" alt="" class="second__aboutimg__content">
-
-                <div class="about__details">
-                    <div class="about__text">
-                        <h4 class="content__subtitle second__content__subtitle">vår personal</h4>
-                        <h2 class="content__title second__content__title">Personal</h2>
-                        <p class="content__description second__content__description">Vi som jobbar här har över 15 års erfarenhet med te och kaffe. Vi hjälper dig gärna att hitta din favoritte/kaffe.Vi ger även råd om olika sätt att tillaga eller brygga olika te/kaffe, välkomna</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section products" id="produkter">
-
-            <h1 class="title products__section__title">Våra produkter</h1>
-
-            <div class="products__container container">
-                <div class="product__content">
-                    <div class="product__items">
-                        <div class="product__item">
-                            <img src="css/te.jpg" alt="img" class="product__img">
-
-                            <div class="productitem__details">
-                                <h4 class="productitem__title">Te</h4>
-                                <p class="productitem__description">Vi har ett mycket stort urval av te(över 200) med högsta kvalite. Du hittar alltid någon te som du gillar.</p>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <img src="css/coffee.jpg" alt="img" class="product__img">
-
-                            <div class="productitem__details">
-                                <h4 class="productitem__title">kaffe</h4>
-                                <p class="productitem__description">Vårt kaffeutbud består av över 40 fina kaffersorter. Besök gärna oss för att få mer info om våra kaffesorter.</p>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <img src="css/tillbehor.jpg" alt="img" class="product__img">
-
-                            <div class="productitem__details">
-                                <h4 class="productitem__title">Tillbehör</h4>
-                                <p class="productitem__description">Förutom en stor kollektion av fina tekannor, kaffekoppar, härliga smaksättningar till teat så har vi mycket fina choklader av hög kvalite och massa annat smått och gott.</p>
-                            </div>
-                        </div>
-                        <div class="product__item">
-                            <img src="css/takeaway.jpg" alt="img" class="product__img">
-
-                            <div class="productitem__details">
-                                <h4 class="productitem__title">Take away</h4>
-                                <p class="productitem__description">Är du sugen på en kopp färskt kaffe eller en dubbel espresso? Vi fixar det mer än gärna.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section contact" id="kontakt">
-
-            <h1 class="title contact__section__title">Kontakt oss!</h1>
-            <p class="contact__section__subtitle">Vi vill gärna höra dina synpunkter. Kontakta oss om det är något du undrar så hör vi av oss så snart vi kan.</p>
-            
-            <div class="contact__container">
-                <div class="form">
-                    <div class="contact__info">
-                        <h3 class="contact__info__title">låt oss komma i kontakt</h3>
-                        <p class="text">Har du några förslag? feedback? Vi vill gärna höra tillbaka från dig.</p>
-
-                        <div class="info">
-                            <div class="information">
-                                <p><i class="uil uil-map-marker info__icon"></i> Nacka forum, plan 3, Stockholm</p>
-                            </div>
-                            <div class="information">
-                                <p><i class="uil uil-phone info__icon"></i> 08-718 30 20</p>
-                            </div>
-                            <div class="information">
-                                <div class="opening__hours">
-                                    <p><i class="uil uil-clock info__icon"></i> Öppettider:</p>
-                                    <ul class="opening__hours__list">
-                                        <li>Måndag-fredag: 10:00-20:00</li>
-                                        <li>Lördag: 10:00-18:00</li>
-                                        <li>Söndag: 11:00-18:00</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact__form">
-                        <span class="circle one"></span>
-                        <span class="circle two"></span>
-
-                        <form action="#">
-                            <h3 class="contact__title">Kontakt oss</h3>
-                            <div class="input__container">
-                                <input type="text" name="name" class="input" required>
-                                <label for="">Namn</label>
-                                <span>Namn</span>
-                            </div>
-                            <div class="input__container">
-                                <input type="email" name="email" class="input" required>
-                                <label for="">Email</label>
-                                <span>email</span>
-                            </div>
-                            <div class="input__container">
-                                <input type="tel" name="tel" class="input">
-                                <label for="">Telefon</label>
-                                <span>Telefon</span>
-                            </div>
-                            <div class="input__container textarea">
-                                <textarea name="message" class="input" spellcheck="false" required></textarea>
-                                <label for="">Meddelande</label>
-                                <span>Meddelande</span>
-                            </div>
-                            <input type="submit" value="Skicka Meddelande" class="btn">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer" id="footer">
-            <div class="footer__container container">
-                <div class="footer__content">
-                    <a href="#" class="logo__content flex">
-                        <img src="logo.png" class="logo__img" alt="logo">
-                        <span class="logo__text">Nacka Te & Kaffe</span>
+                    <p class="home-description">
+                        Kom gärna in och prova något utav våra ekologiska te/kaffe
+                    </p>
+                    <a href="#about" class="button button-flex">
+                        utforska <i class="ri-arrow-right-down-line button-icon"></i>
                     </a>
+                </div>
+            </div>
+        </section>
 
-                    <div class="footer__links">
-                        <ul class="menu__list flex">
-                            <li><a href="#hem" class="nav__link">Hem</a></li>
-                            <li><a href="#om-oss" class="nav__link">Om oss</a></li>
-                            <li><a href="#produkter" class="nav__link">Produkter</a></li>
-                            <li><a href="#kontakt" class="nav__link">Kontakt oss</a></li>
-                        </ul>
+        <section class="about section container" id="about">
+            <div class="about-container grid">
+                <img src="assets/img/butik.jpg" alt="img" class="about-img">
+
+                <div class="about-data">
+                    <h2 class="section-title about-title">
+                        Om oss...
+                    </h2>
+
+                    <p class="about-description">
+                        Nacka te & kaffe handel är Nackas första te och kaffebutik(handel) som öppnades sommaren 2002. Vi finns i Nacka forum, plan 3. Kom gärna förbi om du har några frågor eller funderingar kring te eller kaffe.
+                    </p>
+
+                    <div class="about-details">
+                        <p class="about-details-description">
+                            <i class="ri-checkbox-fill about-details-icon"></i>
+                            över 15 års erfarenhet
+                        </p>
+                        <p class="about-details-description">
+                            <i class="ri-checkbox-fill about-details-icon"></i>
+                            över 200 fina te
+                        </p>
+                        <p class="about-details-description">
+                            <i class="ri-checkbox-fill about-details-icon"></i>
+                            över 40 fina kaffesorter
+                        </p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
+
+        <section class="product section container" id="products">
+            <h2 class="section-title-center">
+                Våra produkter
+            </h2>
+
+            <div class="product-container grid">
+                <article class="product-card">
+                    <div class="product-circle"></div>
+
+                    <img src="assets/img/coffee-product.png" alt="" class="product-img">
+
+                    <h3 class="product-title">Kaffe</h3>
+                    <p class="product-description">
+                        Vårt kaffeutbud består av över 40 fina kaffersorter. Besök gärna oss för att få mer info om våra kafffesorter.
+                    </p>
+                </article>
+                <article class="product-card">
+                    <div class="product-circle"></div>
+
+                    <img src="assets/img/te.png" alt="" class="product-img">
+
+                    <h3 class="product-title">Te</h3>
+                    <p class="product-description">
+                        Vi har ett mycket stort urval av te(över 200) med högsta kvalite. Du hittar alltid någon te som du gillar.
+                    </p>
+                </article>
+                <article class="product-card">
+                    <div class="product-circle"></div>
+
+                    <img src="assets/img/tillbehor.png" alt="" class="product-img">
+
+                    <h3 class="product-title">Tillbehör</h3>
+                    <p class="product-description">
+                        Förutom en stor kollektion av fina tekannor, kaffekoppar, härliga smaksättningar till teat så har vi mycket fina choklader av hög kvalite och massa annat smått och gott.
+                    </p>
+                </article>
+                <article class="product-card">
+                    <div class="product-circle"></div>
+
+                    <img src="assets/img/takeaway.png" alt="" class="product-img">
+
+                    <h3 class="product-title">Take away</h3>
+                    <p class="product-description">
+                        Är du sugen på en kopp färskt kaffe eller en dubbel espresso? Vi fixar det mer än gärna
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section container" id="contact">
+            <div class="contact-container grid">
+                <div class="contact-box">
+                    <h2 class="section-title">Kontakt oss</h2>
+                    <div class="contact-data">
+                        <div class="contact-information">
+                            <p class="contact-subtitle">
+                                ring oss för omedelbar support
+                            </p>
+                            <span class="contact-description">
+                                <i class="ri-phone-line contact-icon"></i>
+                                08-718 30 20
+                            </span>
+                        </div>
+                        <div class="contact-information">
+                            <p class="contact-subtitle">
+                                skriv till oss via e-post
+                            </p>
+                            <span class="contact-description">
+                                <i class="ri-mail-line contact-icon"></i>
+                                example@gmail.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="#" class="contact-form">
+                    <div class="contact-inputs">
+                        <div class="contact-content">
+                            <input type="email" placeholder=" " class="contact-input">
+                            <label for="" class="contact-label">E-post</label>
+                        </div>
+                        <div class="contact-content">
+                            <input type="text" placeholder=" " class="contact-input">
+                            <label for="" class="contact-label">Subjekt</label>
+                        </div>
+                        <div class="contact-content contact-area">
+                            <textarea name="message" placeholder=" " class="contact-input"></textarea>
+                            <label for="" class="contact-label">Meddelande</label>
+                        </div>
+                    </div>
+
+                    <button class="button button-flex">
+                        Skicka Meddelande
+                        <i class="ri-arrow-right-up-line button-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <footer class="footer section">
+        <div class="footer-container container grid">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <i class="ri-cup-line footer-logo-icon"></i> Nacka te & kaffe handel
+                </a>
 
-    <button onclick="TopFunction()" id="ScrollToTop" title="Go to top"><i class="uil uil-arrow-up"></i></button>
+                <div class="footer-content">
+                    <h3 class="footer-title">Besöksadress</h3>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
+                    <ul class="footer-data">
+                        <li class="footer-information">Nacka forum</li>
+                        <li class="footer-information">Plan 3</li>
+                        <li class="footer-information">Stockholm, Sverige</li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <h3 class="footer-title">Kontakt Oss</h3>
+
+                    <ul class="footer-data">
+                        <li class="footer-information">08-718 30 20</li>
+                        <li class="footer-information">example@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer-copyright">&#169; Nacka te & kaffe. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
