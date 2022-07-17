@@ -85,6 +85,7 @@ a {
 img {
     max-width: 100%;
     height: auto;
+    user-select: none;
 }
 body.dark-theme {
     --first-color-dark: hsl(var(--hue), 8%, 20%);
@@ -289,10 +290,12 @@ body.dark-theme {
 .product-card {
     position: relative;
     display: grid;
+    gap: .9rem;
 }
 .product-img {
     position: relative;
-    max-width: 100%;
+    width: 150px;
+    border-radius: 5px;
     justify-self: center;
     margin-bottom: var(--mb-0-75);
     transition: .3s;
@@ -452,6 +455,18 @@ body.dark-theme {
         justify-content: center;
         column-gap: 5rem;
     }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    .footer-content {
+        width: 40%;
+        padding: 0 15px;
+    }
+    .footer-logo {
+        font-size: .750rem;
+    }
 }
 @media screen and (min-width: 767px) {
     body {
@@ -484,8 +499,17 @@ body.dark-theme {
     .home-img {
         width: 300px;
     }
-    .footer-container {
-        grid-template-columns: 1fr .5fr .5fr;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .footer-content {
+        width: 28%;
+        padding: 0 15px;
+    }
+    .footer-logo {
+        font-size: .750rem;
     }
 }
 @media screen and (min-width: 992px) {
@@ -519,12 +543,17 @@ body.dark-theme {
     .product-img {
         width: 160px;
     }
-    .footer-logo {
-        font-size: var(--h3-font-size);
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
     }
-    .footer-container {
-        display: grid;
-        grid-template-columns: 1fr .5fr .5fr .5fr;
+    .footer-content {
+        width: 30%;
+        padding: 0 15px;
+    }
+    .footer-logo {
+        font-size: 1rem;
     }
     .footer-copyright {
         margin: 7rem 0 2rem;
@@ -533,5 +562,17 @@ body.dark-theme {
 @media screen and (min-width: 1200px) {
     .about-container {
         column-gap: 7rem;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .footer-content {
+        width: 30%;
+        padding: 0 15px;
+    }
+    .footer-logo {
+        font-size: 1.1rem;
     }
 }
