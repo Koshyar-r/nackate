@@ -92,7 +92,7 @@ body.dark-theme {
     --title-color: hsl(152, 24%, 95%);
     --text-color: hsl(152, 24%, 80%);
     --body-color: hsl(8, 67%, 5%);
-    --container-color: hsl(152, 8%, 16%);
+    --container-color: hsl(8, 77%, 9%);
 }
 .dark-theme .scroll-header {
     box-shadow: 0 1px 4px hsla(152, 4%, 4%, .3);
